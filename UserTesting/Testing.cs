@@ -45,5 +45,14 @@ namespace UserTesting
             bool result = objTest.ValidatePassword("Rahulllll");
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void TestPasswordRule2()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("RahulLLll");
+            Assert.IsTrue(result);
+        }
     }
 }
