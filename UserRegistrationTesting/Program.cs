@@ -18,6 +18,10 @@
             Console.WriteLine("\nEnter Email Id: ");
             string email = Console.ReadLine();
             objUser.ValidateEmail(email);
+
+            Console.WriteLine("\nEnter Mobile Number: ");
+            string mobileNum = Console.ReadLine();
+            objUser.ValidateMobileNumber(mobileNum);
         }
     }
 }
