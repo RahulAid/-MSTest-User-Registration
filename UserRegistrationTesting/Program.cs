@@ -26,6 +26,10 @@
             Console.WriteLine("\nEnter Password: ");
             string password = Console.ReadLine();
             objUser.ValidatePassword(password);
+
+            Console.WriteLine("\nEnter Email: ");
+            string sampleEmail = Console.ReadLine();
+            objUser.ValidateSampleEmail(sampleEmail);
         }
     }
 }

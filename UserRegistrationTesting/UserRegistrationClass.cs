@@ -33,10 +33,16 @@ namespace UserRegistrationTesting
             return Regex.IsMatch(mobileNum, mobilePattern);
         }
 
-        public string passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$";
+        public string passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\D\W).\S{8,}$";
         public bool ValidatePassword(string password)
         {
             return Regex.IsMatch(password, passwordPattern);
+        }
+
+        public string sampleEmailPattern = @"^([a][b][c])([_\.\+\-])([a-zA-Z0-9]+)\@([b][l])\.([c][o])\.([a-z]{2})*$";
+        public bool ValidateSampleEmail(string sampleEmail)
+        {
+            return Regex.IsMatch(sampleEmail, sampleEmailPattern);
         }
     }
 }
