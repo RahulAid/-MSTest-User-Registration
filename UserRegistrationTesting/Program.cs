@@ -22,6 +22,10 @@
             Console.WriteLine("\nEnter Mobile Number: ");
             string mobileNum = Console.ReadLine();
             objUser.ValidateMobileNumber(mobileNum);
+
+            Console.WriteLine("\nEnter Password: ");
+            string password = Console.ReadLine();
+            objUser.ValidatePassword(password);
         }
     }
 }

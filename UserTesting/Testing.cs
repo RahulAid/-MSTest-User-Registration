@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace UserTesting
 {
     [TestClass]
@@ -32,6 +34,15 @@ namespace UserTesting
         {
             UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
             bool result = objTest.ValidateMobileNumber("+91 2134657809");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestPasswordRule1()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("Rahulllll");
             Assert.IsTrue(result);
         }
     }
