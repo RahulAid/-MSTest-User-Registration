@@ -14,6 +14,10 @@
             Console.WriteLine("\nEnter Last Name: ");
             string lastName = Console.ReadLine();
             objUser.ValidateLastName(lastName);
+
+            Console.WriteLine("\nEnter Email Id: ");
+            string email = Console.ReadLine();
+            objUser.ValidateEmail(email);
         }
     }
 }
