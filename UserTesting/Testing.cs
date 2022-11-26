@@ -81,5 +81,77 @@ namespace UserTesting
             bool result = objTest.ValidatePassword("abc@yahoo.com");
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void TestSampleEmail2()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc-100@yahoo.com");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail3()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc.100@yahoo.com");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail4()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc111@abc.com");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail5()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc-100@abc.net");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail6()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc.100@abc.com.au");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail7()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc@1.com");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail8()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc@gmail.com.com");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void TestSampleEmail9()
+        {
+            UserRegistrationTesting.UserRegistrationClass objTest = new UserRegistrationTesting.UserRegistrationClass();
+
+            bool result = objTest.ValidatePassword("abc+100@gmail.com");
+            Assert.IsTrue(result);
+        }
     }
 }
